@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Given a JSON payload, produce a CSV file per employer with employees having the most family members enrolled at the top of the file and employees having the least number of enrolled family members at the bottom. For employees having the same number of enrolled family members, they should be sorted alphabetically.
+Given a JSON payload, I made a CSV file per employer with employees having the most family members enrolled at the top of the file and employees having the least number of enrolled family members at the bottom. For employees having the same number of enrolled family members, they are sorted alphabetically.
 
 ## Input Description
 
