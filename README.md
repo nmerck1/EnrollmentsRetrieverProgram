@@ -1,23 +1,12 @@
-# IAG Programming Exercise
+# Java Programming Exercise
 
 ## Introduction
 
-IAG, as an insurance enrollment provider, handles enrollments for dozens of employers. It is often necessary for us to produce tabulated reports for our employers of which employees have enrolled each day.
-
 Given a JSON payload, produce a CSV file per employer with employees having the most family members enrolled at the top of the file and employees having the least number of enrolled family members at the bottom. For employees having the same number of enrolled family members, they should be sorted alphabetically.
-
-_Restrictions:_
-
-1. Your solution must be completed in the Python or Java programming languages.
-2. You must fetch the JSON from the URL provided and deserialize it in your solution.
-3. You may use any CSV library available for your language to produce the CSV files, or you
-may do it manually.
-    1. If using a library in Python, you must provide a requirements.txt file giving the library and version of that library used. Any other libraries you use not in the Python standard library must also be listed in this file.
-    2. If using a library in Java, you must provide a pom.xml giving the library and version of that library used. Any other libraries that you use not in the Java standard library must also be listed in this file.
 
 ## Input Description
 
-The input to your program will be a JSON payload which contains an array of objects (or dictionaries). Each dictionary will have 5 properties:
+The input to the program is a JSON payload which contains an array of objects (or dictionaries). Each dictionary will have 5 properties:
 
 - employer (**int**) - the numeric identifier of the employer
 - employee (**string**) - the name of the employee
@@ -31,7 +20,7 @@ The input to your program will be a JSON payload which contains an array of obje
 
 ## Output Description
 
-For each employer, produce a file named <employer>.csv. The CSV file should have 5 columns:
+For each employer, there is a file named <employer>.csv. The CSV file has 5 columns:
 
 - Employer (**int**) - the id of the employer
 - Employee (**string**) - the name of the employee
@@ -77,7 +66,7 @@ For each employer, produce a file named <employer>.csv. The CSV file should have
   
 ## Sample Output
 
-You should produce a file named 1.csv with the columns: Employer, Employee, Total Enrolled, Spouses Enrolled, Children Enrolled. The file should have the following content.
+It will produce a file named 1.csv with the columns: Employer, Employee, Total Enrolled, Spouses Enrolled, Children Enrolled. The file should have the following content.
 
 | Employer | Employee | Total Enrolled | Spouses Enrolled | Children Enrolled |
 | --- | --- | --- | --- | --- |
